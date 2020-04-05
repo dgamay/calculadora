@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Plantilla de Calculadora </title>
+
+
+<link type="text/css" href="estilos.css" rel="stylesheet">
+
+</head>
+<meta charset="utf-8">
+<body>
+
+
+	<div id="calculadora">
+		<table class="Calculadora" align="center">
+			<tr align="center">
+				<td colspan="4"><input type="text"placeholder="0" id="resultado" readonly></td>
+			</tr>
+			<tr>
+				<td><button type="button" id="dividir" onclick="operacion(this)" >%</button></td>
+				<td><button type="button" id="raiz" onclick="operacion(this)">Raíz</button></td>
+				<td><button type="button" id="cuadrado" >x^2</button></td>
+				<td><button type="button" id="1/x" >1/x</button></td>
+			</tr>
+			<tr>
+				<td><button type="reset" id="CE" onclick="eliminaCifra(this)" color>CE</button></td>
+				<td><button type="reset" id="C" onclick="limpia()">    C</button></td>
+				<td><button type="reset" id="<--" onclick="eliminaCaracter(this)"><--</button></td>
+				<td><button type="button" id="dividir" onclick="divide()">/</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" id="7" onclick="muestra(7)" value="7">7</button></td>
+				<td><button type="button" id="8" onclick="muestra(8)" value="8">8</button></td>
+				<td><button type="button" id="9" onclick="muestra(9)" value="9">9</button></td>
+				<td><button type="button" id="multiplica" onclick="multiplica()">*</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" id="4" onclick="muestra(4)" value="4">4</button></td>
+				<td><button type="button" id="5" onclick="muestra(5)" value="5">5</button></td>
+				<td><button type="button" id="6" onclick="muestra(6)" value="6">6</button></td>
+				<td><button type="button" id="resta" onclick="restar()">-</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" id="1" onclick="muestra(1)" value="1">1</button></td>
+				<td><button type="button" id="2" onclick="muestra(2)" value="2">2</button></td>
+				<td><button type="button" id="3" onclick="muestra(3)" value="3">3</button></td>
+				<td><button type="button" id="suma" onclick="sumar()">+</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" id="dividir" onclick="operacion(this)">+-</button></td>
+				<td><button type="button" id="0" onclick="muestra(0)" value="0">0</button></td>
+				<td><button type="button" id="punto" onclick="muestra('.')">.</button></td>
+				<td><button type="button" id="igual"onclick="resolver">=</button></td>
+			</tr>
+		</table>
+
+	</div>
+	<script src="js/operaciones.js"></script>
+</body>
+</html>
