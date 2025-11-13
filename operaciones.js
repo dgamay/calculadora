@@ -5,7 +5,7 @@ Definición de funciones para el funcionamiento de la calculadora
 var operandoa;
 var operandob;
 var operacion;
-
+console.log("Archivo caargado correctamente");
 
 var resultado = document.getElementById("resultado");
 var dividir = document.getElementById("dividir");
@@ -23,7 +23,7 @@ var dos = document.getElementById("2").value;
 var uno = document.getElementById("1").value;
 var cero = document.getElementById("0").value;
 
-// esta funcion toma lo que hay en resultado ysin borrar le agrega el valor de muestra 
+// esta funcion toma lo que hay en resultado y sin borrar le agrega el valor de muestra 
 function muestra(numero){
 	document.getElementById("resultado").value = document.getElementById("resultado").value + numero;
 }
@@ -94,8 +94,8 @@ function resolver(){
 	switch (operacion) {
 		case "+":
 			operandob = document.getElementById("resultado").value;
-			alert (operandob)
-			limpiar()
+/* 			alert (operandob)
+ */			limpiar()
 			res = parseFloat(operandoa) + parseFloat(operandob)
 			//alert (res)
 			document.getElementById("resultado").value = document.getElementById("resultado").value + res
@@ -129,7 +129,7 @@ function resolver(){
 			break;
 	}
 	resetear();
-	resultado.textContent = res;
+	resultado.value = res;
 }
 
 // function operacion(comando) {

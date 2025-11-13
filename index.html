@@ -17,7 +17,7 @@
 				<td colspan="4"><input type="text"placeholder="0" id="resultado" readonly></td>
 			</tr>
 			<tr>
-				<td><button type="button" id="dividir" onclick="operacion(this)" >%</button></td>
+				<td><button type="button" id="porcentaje" onclick="operacion(this)" >%</button></td>
 				<td><button type="button" id="raiz" onclick="operacion(this)">Raíz</button></td>
 				<td><button type="button" id="cuadrado" >x^2</button></td>
 				<td><button type="button" id="1/x" >1/x</button></td>
@@ -47,14 +47,14 @@
 				<td><button type="button" id="suma" onclick="sumar()">+</button></td>
 			</tr>
 			<tr>
-				<td><button type="button" id="dividir" onclick="operacion(this)">+-</button></td>
+				<td><button type="button" id="masmenos" onclick="operacion(this)">+-</button></td>
 				<td><button type="button" id="0" onclick="muestra(0)" value="0">0</button></td>
 				<td><button type="button" id="punto" onclick="muestra('.')">.</button></td>
-				<td><button type="button" id="igual"onclick="resolver">=</button></td>
+				<td><button type="button" id="igual"onclick="resolver()">=</button></td>
 			</tr>
 		</table>
 
 	</div>
-	<script src="js/operaciones.js"></script>
+	<script src="operaciones.js"></script>
 </body>
 </html>
